@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
-gem 'mongoid',  '2.0.0.rc.6'
-gem 'bson_ext', '~> 1.2'
+gem 'rails'
+gem 'mongoid'
+gem 'bson_ext'
 gem 'devise'
 gem 'cancan'
 gem 'passenger'
@@ -13,7 +13,7 @@ gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'feedzirra'
 gem 'thin'
-
+gem 'therubyracer'
 group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
