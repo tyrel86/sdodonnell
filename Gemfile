@@ -12,6 +12,7 @@ gem 'simple_form'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'feedzirra'
+gem 'thin'
 
 group :development, :test do
   gem 'capybara'
