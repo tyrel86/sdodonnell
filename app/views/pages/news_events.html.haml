@@ -1,0 +1,16 @@
+#content
+	%h1 Events
+	- @events.each do |event|
+		.event
+			%p
+				%b= event.date
+				= event.heading
+
+#sidebar
+	%h1 Industry News
+	- @feeds.each do |feed|
+		%h3= raw feed.title
+		- last_index = ((feed.entries.size >= 3) ? 2 : (feed.entries.size - 1))
+		- feed.entries[0..last_index].each do |entry|
+			= link_to entry.url do
+				%p= entry.title

@@ -1,0 +1,14 @@
+<div id="mailing-list-signup" class="mailing-list-modal" style="display: none;">
+	<h3>Subscribe to the mailing list</h3>
+	<p>Simply complete the form bellow. After it's submited you will get an email confirmation. Click the confirmation link to get updates on books and promotions.</p>
+	<p>I will never sell or share this email. It will only be used to update you about my work.</p>
+	<%= simple_form_for Subscriber.new do |f| %>
+		<%= f.input :name %>
+		<%= f.input :email %>
+		<%= f.submit "Sign Up" %>
+	<% end %>
+</div>
+
+<%=  link_to_modal "#mailing-list-signup", :class=>"signup" do %>
+	<div class="button smaller">Mailing List</div>
+<% end %>

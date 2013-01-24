@@ -1,0 +1,27 @@
+!!! XML
+!!!
+%html
+	%head
+		%title= SITE_TITLE
+		= javascript_include_tag :application
+		= csrf_meta_tag
+		= stylesheet_link_tag 'screen.css', :media => 'screen, projection'
+		= stylesheet_link_tag 'print.css',  :media => 'print'
+		= stylesheet_link_tag :application
+		/[if lt IE 8]
+		= stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+
+	%body.bp.two-col
+
+		#container
+
+			#header
+				%h1#author S. D. O'Donnell
+				%p#author_small AUTHOR
+			= render 'partials/nav'
+
+			= yield
+
+			#footer
+				%p.left Copyright &#169; 2013 S. D. O'Donnell
+				%p.right Site by Tyrel Richey

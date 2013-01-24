@@ -1,0 +1,8 @@
+#content
+	- if notice
+		%p.notice= notice
+	- if alert
+		%p.error= alert
+	%h1 
+
+= render "partials/dbside_add"
