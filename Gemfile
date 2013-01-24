@@ -14,7 +14,7 @@ gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'feedzirra'
 gem 'thin'
-gem 'therubyracer'
+
 group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
