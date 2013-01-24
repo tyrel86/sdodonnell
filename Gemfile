@@ -38,4 +38,6 @@ group :assets do
 	gem 'jquery-rails'
 	gem 'jquery-ui-rails'
   gem 'jquery-modal-rails'
+	gem 'therubyracer'
+	gem 'uglifier'
 end
