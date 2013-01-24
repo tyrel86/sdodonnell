@@ -7,3 +7,12 @@ development:
       options:
   options:
     allow_dynamic_fields: false
+production:
+  sessions:
+    default:
+      database: sdodonnell
+      hosts:
+        - localhost:27017
+      options:
+  options:
+    allow_dynamic_fields: false
