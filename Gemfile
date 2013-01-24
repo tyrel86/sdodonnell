@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'ZenTest', '4.8.3'
 gem 'rails'
 gem 'mongoid'
 gem 'bson_ext'
