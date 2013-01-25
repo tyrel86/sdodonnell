@@ -65,4 +65,7 @@ Sdodonnell::Application.configure do
 	require 'jquery/modal/filters'
 	require 'jquery/modal/helpers'
 
+	config.assets.precompile << '*.js'
+	config.assets.precompile << '*.css'
+
 end
