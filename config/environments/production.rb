@@ -60,5 +60,9 @@ Sdodonnell::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+	
+	require 'jquery/modal/rails'
+	require 'jquery/modal/filters'
+	require 'jquery/modal/helpers'
 
 end
