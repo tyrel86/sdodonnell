@@ -3,6 +3,11 @@
 		%p.notice= notice
 	- if alert
 		%p.error= alert
-	%h1 
+	%h1 Contact
+	= simple_form_for @contact do |f|
+		= f.input :name
+		= f.input :email
+		= f.input :message, as: :text
+		= f.submit "Send Message"
 
 = render "partials/dbside_add"

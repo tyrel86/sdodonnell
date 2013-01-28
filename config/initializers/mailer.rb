@@ -1,10 +1,10 @@
 # Action Mailer
+ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
-	:address              => "smtp.gmail.com",
-	:tls                  => true,
+	:address              => "smtp.live.com",
 	:port                 => 587,
-	:user_name            => 'tyrelrichey@gmail.com',
-	:password             => 'GA_BuddhA024878',
-	:authentication       => 'plain',
-	:enable_starttls_auto => true 
+	:user_name            => 'sarah@sdodonnell.com',
+	:password             => 'wolf55',
+	:authentication       => :plain,
+	:enable_starttls_auto => true
 }

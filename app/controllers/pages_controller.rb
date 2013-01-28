@@ -9,4 +9,8 @@ class PagesController < ApplicationController
 			((feed.class == Feedzirra::Parser::RSS) ? r << feed : r)
 		end
 	end 
+
+	def contact
+		@contact = Contact.new
+	end
 end

@@ -1,0 +1,10 @@
+Good day Sarah,
+
+The following message was sent from the contact form on your web page from <%= @contact.name %>
+
+<%= @contact.message %>
+
+You can respond to at <%= mail_to @contact.email %>
+
+Sincerely,
+Your Server

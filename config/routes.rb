@@ -1,6 +1,6 @@
 Sdodonnell::Application.routes.draw do
-  resources :events
 
+  resources :events
 
   get "feeds/index"
 
@@ -13,6 +13,9 @@ Sdodonnell::Application.routes.draw do
 	match "/news-events" => "pages#news_events"
 	match "/resources" => "pages#resources"
 	match "/contact" => "pages#contact"
+	get "/subscribers/confirm/:key" => "subscribers#confirm", as: :confirm_subscriber
+	get "/subscribers/unsubscribe/:key" => "subscribers#confirm", as: :unsubscribe_subscriber
 	resource :subscribers
+	resource :contacts
 	devise_for :users
 end

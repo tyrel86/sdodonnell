@@ -219,3 +219,31 @@ form {
 #mailing-list-signup {
 	font-size: 15px;
 }
+
+.notice {
+	position: relative;
+	left: 22px;
+}
+
+#new_contact {
+	position: relative;
+	left: 22px;
+	label.text {
+		display: block;
+		width: 389px;
+		text-align: center;
+	}
+	textarea {
+		position: relative;
+		left: 34px;
+	}
+	input[type="submit"] {
+		position: relative;
+		left: 140px;
+	}
+}
+
+
+
+
+

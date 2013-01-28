@@ -66,3 +66,6 @@ Sdodonnell::Application.configure do
 	require 'jquery/modal/helpers'
 
 end
+
+Rails.application.routes.default_url_options[:host] = 'http://www.sdodonnell.com'
+
