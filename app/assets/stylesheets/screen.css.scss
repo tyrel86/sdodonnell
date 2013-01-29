@@ -48,6 +48,7 @@ body.bp.two-col {
 #container {
 	background-color: #EAE9E5;
 	#header {
+		position: relative;
 		width: 100%;
 		height: 270px;
 		background-image: url('/assets/dmbanner.png');
@@ -56,14 +57,14 @@ body.bp.two-col {
 			position: absolute;
 			font-size: 59px;
 			top: 39px;
-			left: 233px;
+			left: 65px;
 			color: white;
 		}
 		#author_small {
 			position: absolute;
 			font-size: 22px;
 			top: 88px;
-			left: 512px;
+			left: 315px;
 			color: white;
 		}
 	}
