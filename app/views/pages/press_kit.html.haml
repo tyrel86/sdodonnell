@@ -1,0 +1,9 @@
+#content
+	- if notice
+		%p.notice= notice
+	- if alert
+		%p.error= alert
+	%h1 Press Kit
+	%p Click here to download the press kit for the launch of Deadly Memories.
+
+= render "partials/dbside_add"
