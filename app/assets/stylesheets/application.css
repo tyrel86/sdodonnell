@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require screen
+ *= require monocore
  *= require jquery.ui.all
  *= require jquery.modal
 */

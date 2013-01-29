@@ -203,7 +203,36 @@ body.bp.two-col {
 		}
 	}
 }
-
+a.read_book {
+	.button {
+		font-weight: bolder;
+		width: 170px;
+		position: relative;
+		left: 27px;
+		margin-bottom: 10px;
+		text-align: center;
+		height: 40px;
+		background-color: #969696;
+		border: 5px solid #1D1D1D;
+		@include grey-gradiant;
+		font-size: 25px;
+		color: white;
+		border-radius: 5px; 
+		-moz-border-radius: 5px; 
+		-webkit-border-radius: 5px; 
+		&:hover {
+			border: 5px solid #940000;
+			background-color: #EAE9E5;
+			color: #940000;
+		}
+		&.smaller {
+			font-size: 24px;
+			padding-top: 6px;
+		}
+		text-decoration: underline;
+		margin: auto;
+	}
+}
 form {
 	label {
 		margin-right: 7px;
@@ -243,7 +272,15 @@ form {
 	}
 }
 
-
-
-
-
+#magazine{
+	width: 866px;
+	height: 560px;
+	background-color: rgba(1,1,1,0);
+	padding: 0;
+	#close-modal {
+		display: none;
+	}
+}
+#magazine .turn-page{
+    background-color:#ccc;
+}

@@ -12,6 +12,6 @@
 //
 //= require jquery.ui.all
 //= require jquery.modal
+//= require turn.min
 //= require jquery.turbolinks
 //= require turbolinks
-//= require_tree .
