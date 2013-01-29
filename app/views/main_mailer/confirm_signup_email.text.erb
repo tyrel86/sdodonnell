@@ -3,4 +3,4 @@ Hello <%= @subscriber.name %>,
 Thank you for your interest in my work. I need to confirm that you (the person who signed up for the mailing list) actually owns the email. To confirm simply click the link bellow and you will begin reseaving updates about my work.
 
 Sory your email doesn't support HTML. Please coppy and paste the bellow link to you browser in order to subscribe.
-<%= link_to confirm_subscriber_url( @subscriber.key ), confirm_subscriber_url( @subscriber.key ) %>
+http://www.sdodonnell.com/subscribers/confirm/<%= @subscriber.key %>
