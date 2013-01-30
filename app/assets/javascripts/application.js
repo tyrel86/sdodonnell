@@ -13,5 +13,6 @@
 //= require jquery.ui.all
 //= require jquery.modal
 //= require turn.min
+//= require google_anylitics
 //= require jquery.turbolinks
 //= require turbolinks
