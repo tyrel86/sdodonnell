@@ -1,1 +1,1 @@
-SITE_TITLE = "Sarah O'Donnell"
+SITE_TITLE = "S.D. O'Donnell"

@@ -14,7 +14,12 @@ gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'feedzirra'
 gem 'thin'
-
+gem 'tinymce-rails'
+gem "mongoid-paperclip", :require => "mongoid_paperclip"
+gem 'html_truncator', :require => "html_truncator"
+gem "koala"
+gem 'sanitize'
+gem 'twitter'
 group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
@@ -23,7 +28,6 @@ group :development, :test do
   gem 'autotest'
   gem 'launchy'
   gem 'faker'
-  gem 'ruby-debug19'
   gem 'haml-rails'
 end
 
@@ -41,3 +45,5 @@ group :assets do
 	gem 'therubyracer'
 	gem 'uglifier'
 end
+
+gem 'debugger'

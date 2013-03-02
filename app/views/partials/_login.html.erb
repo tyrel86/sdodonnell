@@ -1,0 +1,13 @@
+<div id="user_nav">
+  <% if current_admin %>
+    <p class="admin">
+      Currently Admin <strong><%= current_admin.user_name %></strong>!
+      <%= link_to "Sign out", admin_logout_path, id: "sign_out" %>
+      |
+      <%= link_to "Backend", new_blog_path, id: "backend" %>
+			|
+			<%= link_to "Front end", root_path %>
+    </p>
+  <% end %>
+</div>
+

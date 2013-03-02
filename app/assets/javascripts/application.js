@@ -14,4 +14,5 @@
 //= require jquery.modal
 //= require turn.min
 //= require jquery.turbolinks
+//= require tinymce-jquery
 //= require turbolinks

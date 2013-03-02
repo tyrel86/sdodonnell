@@ -1,0 +1,10 @@
+%h1.heading= @blog.title
+%hr
+.fullspan
+	.blog-entry
+		.image= image_tag @blog.main_blog_image
+		.content= raw @blog.content
+%hr
+.back-to-index
+	= link_to "More Blogs", blogs_path, class: :left
+	= link_to "More Blogs", blogs_path, class: :right

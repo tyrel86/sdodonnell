@@ -1,0 +1,12 @@
+%h1.heading S.D. O'Donnell's Blog
+%hr
+.fullspan
+	%p= "No Blog entries as of yet soon to come" if @blogs.empty?
+	- @blogs.each do |blog|
+		.blog-entry
+			= link_to blog, class: :plain do
+				%h1= blog.title
+			= link_to blog, class: :plain do
+				.image= image_tag blog.main_blog_image
+			.content= raw blog.exerpt(140)
+		%hr

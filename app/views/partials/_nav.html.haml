@@ -1,6 +1,7 @@
 #nav
 	%ul
 		%li{class: ("active" if active?('home'))}= link_to "Home", '/home'
+		%li{class: ("active" if active?('blogs'))}= link_to "Blog", '/blogs'
 		%li{class: ("active" if active?('bio'))}= link_to "Biography", '/biography'
 		-# %li{class: ("active" if active?('press'))}= link_to "Press Kit", '/press-kit'
 		%li{class: ("active" if active?('dmbook'))}= link_to "Deadly Memories", 'deadly-memories'

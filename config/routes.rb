@@ -1,8 +1,18 @@
 Sdodonnell::Application.routes.draw do
+  # Authentication
+  resources :admins
+  get "/admin_login" => "admin_sessions#new", as: :admin_login
+  get "/admin_logout" => "admin_sessions#destroy"
+	resources :admin_sessions
 
   resources :events
+  resources :blogs
+	match '/feed' => 'blogs#feed',
+      :as => :feed,
+      :defaults => { :format => 'atom' }
 
   get "feeds/index"
+	
 
 	root to: "pages#home"
 	match "/home" => "pages#home"

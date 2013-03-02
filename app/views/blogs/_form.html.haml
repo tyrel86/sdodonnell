@@ -1,0 +1,14 @@
+= simple_form_for @blog do |f|
+	= f.input :title
+	.editor
+		= f.text_area :content, :class => "tinymce"
+	= f.input :main_blog_image
+	- [:facebook,:twitter,:good_reads].each do |medium|
+		%input{ type: :checkbox, name: medium.to_s }= medium.to_s
+	%br
+	- if @blog.created_at
+		= f.submit "Update Blog"
+	- else
+		= f.submit "Create Blog"
+
+= tinymce
