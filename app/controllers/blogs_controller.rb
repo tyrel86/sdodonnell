@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
 
-	before_filter :require_admin, except: [:index,:show]
+	before_filter :require_admin, except: [:index,:show,:feed]
 
 	def feed
 		# this will be the name of the feed displayed on the feed reader
@@ -11,7 +11,7 @@ class BlogsController < ApplicationController
 
 		# this will be our Feed's update timestamp
 		@updated = @posts.first.updated_at if @posts.first
-		@updated_at ||= Date.today
+		@updated ||= Date.today
 
 		respond_to do |format|
 			format.atom { render :layout => false }

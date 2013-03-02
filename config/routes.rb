@@ -11,9 +11,6 @@ Sdodonnell::Application.routes.draw do
       :as => :feed,
       :defaults => { :format => 'atom' }
 
-  get "feeds/index"
-	
-
 	root to: "pages#home"
 	match "/home" => "pages#home"
 	match "/biography" => "pages#biography"
