@@ -3,7 +3,7 @@
 	.editor
 		= f.text_area :content, :class => "tinymce"
 	= f.input :main_blog_image
-	- [:facebook,:twitter,:good_reads].each do |medium|
+	- [:facebook,:twitter].each do |medium|
 		%input{ type: :checkbox, name: medium.to_s }= medium.to_s
 	%br
 	- if @blog.created_at
