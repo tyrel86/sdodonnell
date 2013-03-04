@@ -1,0 +1,8 @@
+= simple_form_for @event do |f|
+	= f.input :heading
+	= f.input :date, as: :date
+	%br
+	- if @event.created_at
+		= f.submit "Update Event"
+	- else
+		= f.submit "Create Event"

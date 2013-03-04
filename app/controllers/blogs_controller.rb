@@ -42,7 +42,7 @@ class BlogsController < ApplicationController
 			redirect_to new_blog_path, notice: "Blog was created and shared!"
 		else
 			@blogs = Blog.all
-			render layout: "new"
+			render "new", layout: "admin"
 		end
   end
 

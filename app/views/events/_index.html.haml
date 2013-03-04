@@ -1,0 +1,8 @@
+- @events.each do |e|
+	%h3= e.heading.html_safe
+	%ul.admin-backend
+		= link_to(edit_event_path(e)) do
+			%li edit
+		= link_to( e, confirm: "You sure?", method: :delete ) do
+			%li eradicate
+	%br

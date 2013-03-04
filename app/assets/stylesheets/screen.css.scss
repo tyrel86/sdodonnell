@@ -340,3 +340,11 @@ form {
 		float: right;
 	}
 }
+
+ul.admin-backend {
+	list-style-type: none !important;
+	li {
+		float: left;
+		margin-left: 10px;
+	}
+}

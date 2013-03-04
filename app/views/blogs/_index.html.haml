@@ -1,0 +1,7 @@
+- @blogs.each do |b|
+	%h3= b.title
+	%ul.admin-backend
+		= link_to(edit_blog_path(b)) do
+			%li edit
+		= link_to( b, confirm: "You sure?", method: :delete ) do
+			%li eradicate

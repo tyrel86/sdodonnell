@@ -11,6 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery.ui.all
+//= require jquery_ujs
 //= require jquery.modal
 //= require turn.min
 //= require jquery.turbolinks
