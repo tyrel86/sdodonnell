@@ -7,7 +7,7 @@ module SocialHelper
 	end
 
 	def self.post_facebook( blog )
-		@graph = Koala::Facebook::API.new("AAACCEWVRC7EBAOdkIyFW1DElNTZBsFy7OVG3WQTYiRHky1vo0ZAsxU9iZChER5P5eTGQqZBWq3ZB8wm39wDUl5wYZBKZBC0PO36E5fwoFoEWQhpZBDuvG79S")
+		@graph = Koala::Facebook::API.new("AAACCEWVRC7EBADQjwLZCvxO6S1ZBkWVepGLm6IPgiEYwQII0jfDTTtlU3tcSeRAdvkbmrZBXXvmiLkkZB8oBcxGy2FnUVLayKCN7u2W9ENJLpP82Om7k")
 		message = "#{blog.title}\n\n#{Sanitize.clean(blog.exerpt(100)).strip}\n\nView The Full Post At\nhttp://sdodonnell.com/blogs/#{blog.id}"
 		@graph.put_object("251731921625102", "feed", :message => message, picture: "http://sdodonnell.com#{blog.main_blog_image(:original)}")
 	end
