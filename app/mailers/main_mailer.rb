@@ -14,6 +14,6 @@ class MainMailer < ActionMailer::Base
   end
 	def contact_form_email( contact )
 		@contact = contact
-    mail(:to => "sarah@sdodonnell.com", :subject => "Message from contact form")
+    mail(:to => "sd@sdodonnell.com", :subject => "Message from contact form")
   end
 end
