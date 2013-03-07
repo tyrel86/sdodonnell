@@ -36,7 +36,8 @@ class SubscribersController < ApplicationController
 	end
 
 	def mail
-		system "(rake 'email:blast[#{params[:message_header]},#{params[:message_body].gsub(',','').gsub('"','').gsub("'",'')}]' > /dev/null ) &"		
+		# system "(rake 'email:blast[#{params[:message_header]},#{params[:message_body].gsub(',','').gsub('"','').gsub("'",'')}]' > /dev/null ) &"		
+		system "(rake 'email:blast[#{params[:message_header]},#{params[:message_body].gsub(',','').gsub('"','').gsub("'",'')}]' >> /webservices/rake_log.txt ) &"		
 		redirect_to compose_subscribers_path
 	end
 
