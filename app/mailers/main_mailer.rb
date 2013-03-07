@@ -7,9 +7,10 @@ class MainMailer < ActionMailer::Base
 		@subscriber = subscriber
     mail(:to => subscriber.email, :subject => "Confirmation of S.D. O'Donnell's Mailing list")
   end
-	def mailing_list_email( subscriber )
+	def mailing_list_email( subscriber, header, body )
 		@subscriber = subscriber
-    mail(:to => subscriber.email, :subject => "News from S.D. O'Donnell's")
+		@body = body
+    mail(:to => subscriber.email, :subject => (header or "News from S.D. O'Donnell's"))
   end
 	def contact_form_email( contact )
 		@contact = contact

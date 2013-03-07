@@ -1,8 +1,12 @@
 = simple_form_for @event do |f|
-	= f.input :heading
+	%h3 Event Description
+	.editor
+		= f.text_area :heading, :class => "tinymce"
 	= f.input :date, as: :date
 	%br
 	- if @event.created_at
 		= f.submit "Update Event"
 	- else
 		= f.submit "Create Event"
+
+= tinymce

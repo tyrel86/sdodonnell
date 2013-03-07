@@ -348,3 +348,8 @@ ul.admin-backend {
 		margin-left: 10px;
 	}
 }
+
+.admin-sidebar {
+	max-height: 500px;
+	overflow-y: scroll;
+}

@@ -1,0 +1,11 @@
+<p>Hello <%= @subscriber.name %>,</p>
+
+<%= @body.html_safe %>
+
+<p>Best,</p>
+<p>S.D. O'Donnell</p>
+
+<p>If you would like to be removed from this mailing list just click the link bellow</p>
+<p>
+<a href="http://sdodonnell.com/subscribers/unsubscribe/<%= @subscriber.key %>">Remove Me</a>
+</p>

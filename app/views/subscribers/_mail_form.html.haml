@@ -1,0 +1,13 @@
+= form_tag("/subscribers/mail", method: "post") do
+	= label_tag(:message_header, "Message Header")
+	%br
+	= text_field_tag(:message_header)
+	%br
+	= label_tag(:message_body, "Message Body")
+	%br
+	.editor
+		= text_area_tag :message_body, "", :class => "tinymce"
+	%br
+	= submit_tag("Send")
+
+= tinymce

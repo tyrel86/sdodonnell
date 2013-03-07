@@ -1,0 +1,6 @@
+- @subscribers.each do |s|
+	%h3= "#{s.name} - #{s.confirmed ? 'active' : 'inactive'}"
+	%ul.admin-backend
+		= link_to( s, confirm: "You sure?", method: :delete ) do
+			%li remove
+	%br

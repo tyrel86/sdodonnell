@@ -22,7 +22,9 @@ Sdodonnell::Application.routes.draw do
 	match "/contact" => "pages#contact"
 	get "/subscribers/confirm/:key" => "subscribers#confirm", as: :confirm_subscriber
 	get "/subscribers/unsubscribe/:key" => "subscribers#confirm", as: :unsubscribe_subscriber
-	resource :subscribers
-	resource :contacts
+	get "/subscribers/compose" => "subscribers#compose", as: :compose_subscribers
+	post "/subscribers/mail" => "subscribers#mail", as: :mail_subscribers
+	resources :subscribers
+	resources :contacts
 	devise_for :users
 end

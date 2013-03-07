@@ -1,5 +1,7 @@
 class SubscribersController < ApplicationController
 
+	before_filter :require_admin, only: [:compose, :mail]
+
 	def create
 		subscriber = Subscriber.create( params[:subscriber] )
 		MainMailer.confirm_signup_email(subscriber).deliver
@@ -21,6 +23,21 @@ class SubscribersController < ApplicationController
 		subscriber = Subscriber.where( key: params[:key] ).first
 		subscirber.destroy
 		redirect_to root_path, notice: "You will no longer be recieving emails from this mailing list. Thank you for the time we had together"
+	end
+
+	def destroy
+		Subscriber.find( params[:id] ).destroy
+		redirect_to compose_subscribers_path
+	end
+
+	def compose
+		@subscribers = Subscriber.all
+		render layout: "admin"
+	end
+
+	def mail
+		system "(rake 'email:blast[#{params[:message_header]},#{params[:message_body].gsub(',','').gsub('"','').gsub("'",'')}]' > /dev/null ) &"		
+		redirect_to compose_subscribers_path
 	end
 
 end
