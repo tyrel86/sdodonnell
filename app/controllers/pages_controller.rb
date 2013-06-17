@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   def home
   end
 	def news_events
-		@events = Event.all
+		@events = Event.order_by( date: :desc ).all
 		rss_feeds = Feed.all
 		@feeds = rss_feeds.inject([]) do |r,rss_feed|
 			feed = rss_feed.feedzirra

@@ -1,7 +1,7 @@
 module SocialHelper
 
 	def self.post( params, blog )
-		self.post_facebook( blog ) if params[:facebook]
+		# self.post_facebook( blog ) if params[:facebook]
 		self.post_twitter( blog ) if params[:twitter]
 	end
 

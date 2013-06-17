@@ -160,10 +160,14 @@ body.bp.two-col {
 }
 
 #sidebar {
+	position: relative;
 	.social {
-		margin-bottom: 10px;
+		margin-bottom: 36px;
 		width: 230px;
 		text-align: center;
+		a {
+			z-index: 99;
+		}
 		img {
 			display: inline;
 			opacity: 0.7;
@@ -173,8 +177,15 @@ body.bp.two-col {
 			}
 		}
 	}
+	#indie {
+		width: 172px;
+		position: absolute;
+		top: 0px;
+		left: 111px;
+		top: 34px;
+	}
 	#deadly-memories {
-		margin-bottom: 10px;
+		margin-bottom: 36px;
 	}
 	a {
 		text-decoration: none;
@@ -187,7 +198,7 @@ body.bp.two-col {
 		margin-bottom: 10px;
 		text-align: center;
 		height: 40px;
-		background-color: #969696;
+		background: #969696;
 		border: 5px solid #1D1D1D;
 		@include grey-gradiant;
 		font-size: 25px;
@@ -322,6 +333,9 @@ form {
 	a.plain {
 		text-decoration: none;
 		color: black;
+	}
+	.content {
+		word-wrap: break-word;
 	}
 }
 

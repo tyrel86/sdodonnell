@@ -3,7 +3,7 @@ class EventsController < ApplicationController
 
 	def new
 		@event = Event.new
-		@events = Event.all
+		@events = Event.order_by( date: :desc ).all
 		render layout: "admin"
 	end
 	def create

@@ -9,4 +9,5 @@
 			= link_to blog, class: :plain do
 				.image= image_tag blog.main_blog_image
 			.content= raw blog.exerpt(140)
+			.more= link_to "more", blog
 		%hr
