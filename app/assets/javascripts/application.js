@@ -13,7 +13,8 @@
 //= require jquery.ui.all
 //= require jquery_ujs
 //= require jquery.modal
-//= require turn.min
 //= require jquery.turbolinks
+//= require turn.min
 //= require tinymce-jquery
 //= require turbolinks
+//= require base

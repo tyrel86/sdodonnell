@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'ZenTest', '4.8.3'
-gem 'rails'
+gem 'rails', "3.2.17"
 gem 'mongoid'
 gem 'bson_ext'
 gem 'devise'
@@ -20,21 +19,6 @@ gem 'html_truncator', :require => "html_truncator"
 gem "koala"
 gem 'sanitize'
 gem 'twitter'
-group :development, :test do
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'shoulda'
-  gem 'factory_girl_rails'
-  gem 'autotest'
-  gem 'launchy'
-  gem 'faker'
-  gem 'haml-rails'
-end
-
-group :test do
-  gem 'cucumber-rails'
-end
-
 group :assets do
 	gem "compass"
 	gem "compass-rails"
@@ -42,8 +26,4 @@ group :assets do
 	gem 'jquery-rails'
 	gem 'jquery-ui-rails'
   gem 'jquery-modal-rails'
-	gem 'therubyracer'
-	gem 'uglifier'
 end
-
-gem 'debugger'

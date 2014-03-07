@@ -17,17 +17,3 @@
 <%=  link_to_modal "#magazine", :class=>"read_book" do %>
 	<div class="button">Free Preview</div>
 <% end %>
-
-<script type="text/javascript">
-
-$('#magazine').turn({gradients: true, acceleration: true});
-$(document).ready( function() {
-	$('.read_book').click(function() {
-		function exterminate_close_button() {
-			$('.close-modal').css('display','none')
-			$('#magazine').css('width','866px')
-		}
-		setTimeout(exterminate_close_button,100)
-	})
-})
-</script>
