@@ -10,9 +10,6 @@ development:
 production:
   sessions:
     default:
-      database: sdodonnell
-      hosts:
-        - localhost:27017
-      options:
+     uri: 'mongodb://heroku_app22809731:84rl4k4r0o3vd03hbjb8fr1c0b@ds033699.mongolab.com:33699/heroku_app22809731'
   options:
     allow_dynamic_fields: false
