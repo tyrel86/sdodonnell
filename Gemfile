@@ -26,4 +26,7 @@ group :assets do
 	gem 'jquery-rails'
 	gem 'jquery-ui-rails'
   gem 'jquery-modal-rails'
+  gem 'therubyracer'
+  gem 'coffee-rails', "~> 3.1.0"
+  gem 'uglifier'
 end
