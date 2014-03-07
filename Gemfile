@@ -14,7 +14,7 @@ gem 'jquery-turbolinks'
 gem 'feedzirra'
 gem 'thin'
 gem 'tinymce-rails'
-gem "mongoid-paperclip", :require => "mongoid_paperclip"
+gem "mongoid-paperclip", :require => "mongoid_paperclip", git: "https://github.com/meskyanichi/mongoid-paperclip.git"
 gem 'html_truncator', :require => "html_truncator"
 gem "koala"
 gem 'sanitize'
